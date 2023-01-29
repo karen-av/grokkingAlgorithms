@@ -1,5 +1,6 @@
+# Поиск наименьшего числа в массиве перебором всего  массива          
 def find_smoller(arr):
-    smoller = arr[0]
+    smoller = arr[0] 
     index_smoller = 0
     for i in range(len(arr)):
         if arr[i] < smoller:
@@ -7,6 +8,8 @@ def find_smoller(arr):
             index_smoller = i
     return index_smoller
 
+
+# сортировака массива
 def sort_choose(arr):
     sort_arr = []
     for i in range(len(arr)):
