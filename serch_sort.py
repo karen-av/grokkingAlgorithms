@@ -19,5 +19,6 @@ def sort_choose(arr):
 
 x = [2,4,1, 7, 4, 6]
 print(sort_choose(x))
-        
+           
     
+#https://us04web.zoom.us/j/79608298246?pwd=JudAtqvBN3mMXtXF9mQa1K7PTkfqGt.1
