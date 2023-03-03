@@ -38,15 +38,16 @@ l = '123456789'
 c = 7
 print(bin_serch(l,c))
 
-def fast_serch(arr):
+# быстрая сортировка
+def fast_sort(arr):
     if len(arr) < 2:
         return arr
     else:
         point = arr[0]
         left = [i for i in arr[1:] if i <= point]
         rigth = [i for i in arr[1:] if i > point]
-        return fast_serch(left) + [point] + fast_serch(rigth)
+        return fast_sort(left) + [point] + fast_sort(rigth)
 
 x = [4,1,2,4,23,7,4,5,3]
-print('fast_serch')
-print(fast_serch(x))
+print('fast_sort')
+print(fast_sort(x))
