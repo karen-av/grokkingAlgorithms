@@ -38,6 +38,8 @@ l = '123456789'
 c = 7
 print(bin_serch(l,c))
 
+
+
 # быстрая сортировка
 def fast_sort(arr):
     if len(arr) < 2:
@@ -50,4 +52,21 @@ def fast_sort(arr):
 
 x = [4,1,2,4,23,7,4,5,3]
 print('fast_sort')
+print(fast_sort(x))
+
+# быстрая сортировка c опорным элементом в ценре массива
+def fast_sort(arr):
+    if len(arr) < 2:
+        return arr
+    else:
+        point = arr[len(arr) // 2]
+        arr = arr[:len(arr) // 2] + arr[len(arr) // 2 + 1:]
+        left = [i for i in arr if i <= point]
+        rigth = [i for i in arr if i > point]
+        return fast_sort(left) + [point] + fast_sort(rigth)
+
+
+
+x = [4,1,2,4,23,7,4,5,3]
+print('fast_sort good')
 print(fast_sort(x))

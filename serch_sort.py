@@ -9,7 +9,7 @@ def find_smoller(arr):
     return index_smoller
 
 
-# сортировака массива
+# сортировака массива тупая
 def sort_choose(arr):
     sort_arr = []
     for i in range(len(arr)):
