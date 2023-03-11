@@ -30,8 +30,6 @@ def serch(graf, name):
                 # Добалвяем узел в список проверенных
                 serched.append(person)
 
-                
-
     return False
 
 def person_is_saller(person):
